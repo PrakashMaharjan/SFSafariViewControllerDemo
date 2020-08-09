@@ -17,6 +17,7 @@
 
 // create outlet for SFSafariViewController
 @property(nonatomic,strong) IBOutlet SFSafariViewController *sfvc;
+@property (weak, nonatomic) IBOutlet UIButton *openLinkButton;
 
 @end
 
@@ -25,6 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.openLinkButton.layer.cornerRadius = self.openLinkButton.frame.size.height / 2.0;
+    self.openLinkButton.layer.borderWidth = 2.0;
+    self.openLinkButton.layer.borderColor = [UIColor blueColor].CGColor;
 }
 
 

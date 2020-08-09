@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALF-2J-g3I">
-                                <rect key="frame" x="132" y="318" width="111" height="30"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALF-2J-g3I">
+                                <rect key="frame" x="132" y="425.66666666666669" width="150" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="111" id="gI3-o3-tV8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="80I-M7-5Cj"/>
+                                    <constraint firstAttribute="height" constant="45" id="a7v-V3-kev"/>
                                 </constraints>
                                 <state key="normal" title="Open Link"/>
                                 <connections>
@@ -33,10 +33,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ALF-2J-g3I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jMU-YG-DHJ"/>
-                            <constraint firstItem="ALF-2J-g3I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="juz-oI-o0t"/>
+                            <constraint firstItem="ALF-2J-g3I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6OP-hK-IIT"/>
+                            <constraint firstItem="ALF-2J-g3I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2Y-FB-cCa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="openLinkButton" destination="ALF-2J-g3I" id="sbq-Ra-iL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

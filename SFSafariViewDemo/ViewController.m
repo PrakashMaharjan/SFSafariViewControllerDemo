@@ -43,7 +43,8 @@
         [self presentViewController:self.sfvc animated:YES completion:nil];
     } else {
         //open in default browser of iphone
-        [[UIApplication sharedApplication] openURL:urlToOpen];
+    
+        [[UIApplication sharedApplication] openURL:urlToOpen options:@{} completionHandler:nil];
     }
 }
 

@@ -36,7 +36,6 @@
     
     //url to open
     NSURL *urlToOpen = [NSURL URLWithString:[NSString stringWithFormat:@"https://google.com"]];
-    
     // check SFSafariViewController class available; since SFSafariViewController is available from iOS 9 only.
     if ([SFSafariViewController class] != nil) {
         self.sfvc = [[SFSafariViewController alloc] initWithURL:urlToOpen];
